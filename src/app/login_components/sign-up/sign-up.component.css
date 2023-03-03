@@ -1,0 +1,220 @@
+.sign-up-form-outer-div{
+    width: 440px;
+    border-radius: 6px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    margin-top: 100px;
+    padding-bottom: 12px;
+}
+.sign-up-form-heading{
+    position: relative;
+    border-bottom:1px solid rgba(136, 137, 144, 0.38);
+    padding: 10px 0px 15px 15px;
+}
+.sign-up-form-heading h1{
+    color: #1c1e21;
+    font-size: 32px;
+}
+.sign-up-form-heading p{
+    color: #1c1e21;
+    font-size: 32px;
+    color: #606770;
+    font-size: 15px;
+}
+.sign-up-form-outer-div form{
+    padding: 7px 15px 15px 15px;
+}
+.sign-up-form-outer-div form input::placeholder{
+    color: #8d949e;
+}
+.first-2-inputs-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.first-2-inputs-inside-wrapper{
+    width: 48.8%;
+    margin-top: 10px;
+}
+.first-2-inputs-wrapper div input{
+    width: 89%;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 5px;
+    outline: none;    
+    border: 1px solid #ccd0d5;
+    background: #f5f6f7;
+}
+.snd-2-inputs-wrapper{
+    width: 100%;
+    margin-top: 10px;
+}
+.snd-2-inputs-wrapper input{
+    width: 94.7%;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 5px;
+    outline: none;    
+    border: 1px solid #ccd0d5;
+    background: #f5f6f7;
+}
+.date-of-birth-div{
+    margin-top: 13px;
+    position: relative;
+}
+.label{
+    text-decoration: none;
+    font-size: 12px;
+    color: #606770;
+    font-weight: 500;
+}
+.label span{
+    background-color: #606770;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 0.5px 3px 0px 3px;
+    border-radius: 50px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+.birth-fields-wrapper{
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+    margin-top: 5px;
+}
+.birth-fields-inside-wrapper{
+    width: 31.5%;
+    display: flex;
+    justify-content: space-between;
+}
+.birth-fields-wrapper select{
+    width: 100%;
+    padding: 9px 0px 9px 4px;
+    font-size: 15px;
+    border-radius: 5px;
+    outline: none;    
+    border: 1px solid #ccd0d5;
+}
+.gender-div{
+    margin-top: 15px;
+    position: relative;
+}   
+.gender-fields-div{
+    display: flex;
+    justify-content: space-between;
+}
+.gender-inputs-wrapper{
+    border: 1px solid #ccd0d5;
+    width: 31%;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 5px;
+}
+.gender-fields-div div label{
+    color: #1c1e21; 
+    font-size: 15px;
+    font-weight: normal;
+    display: inline-block;
+    /* border: 1px solid red; */
+    padding: 10px;
+    width: 100%;
+}
+.gender-fields-div div input{
+    position: absolute;
+    right: 10px;
+    top: 13px;
+    border: 1px solid red;
+}
+.sign-up-last-descriptions-div{
+    margin-top: 15px;
+}
+.sign-up-last-descriptions-div h1{
+    color: #777;
+    font-size: 11px;
+    font-weight: normal;
+    margin-bottom: 12px;
+}
+.sign-up-last-descriptions-div h1 a{
+    text-decoration: none;
+    color: #385898;
+}
+.sign-up-last-descriptions-div h1 a:hover{
+    text-decoration: underline;
+}
+.sign-up-button-div{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.sign-up-button-div button{
+    border: none;
+    background-color: #00a400;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 5px;
+    padding: 8px 60px 8px 60px;
+    position: relative;
+    cursor: pointer;
+}
+.sign-up-button-div button:hover:before{
+    content: 'Sign Up';
+    width: 100%;
+    height: 37px;
+    background: linear-gradient(#67ae55, #578843);
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 37px;
+}
+
+
+
+
+/* typescript classes */
+.signUpFormError{
+    border: 1px solid red;
+    border-radius: 5px;
+    position: relative;
+}
+.signUpFormError::after{
+    content: '!';
+    width: 17px;
+    height: 15px;
+    background-color: rgb(193, 84, 72);
+    position: absolute;
+    right: 10px;
+    top: 11px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bolder;
+    color: white;
+    border-radius: 50px;
+    padding-top: 2px;
+
+}
+.birthAndGenderError{
+    border: 1px solid red;
+    border-radius: 5px;
+    position: relative;
+}
+.eorrrr::after{
+    content: '!';
+    width: 17px;
+    height: 15px;
+    background-color: rgb(193, 84, 72);
+    position: absolute;
+    right: 8px;
+    top: -5px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bolder;
+    color: white;
+    border-radius: 50px;
+    padding-top: 2px;
+}

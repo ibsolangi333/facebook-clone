@@ -1,0 +1,144 @@
+.notification-main{
+    width: 100%;
+}
+.notification-main .main-heading{
+    width: 100%;
+    padding: 10px 0px 10px 15px;
+}
+.notification-main .main-heading h1{
+    font-size: 24px;
+}
+.notification-main .all-notifications{
+    width: 100%;
+    padding-left: 15px;
+}
+.notification-main .all-notifications h1{
+    display: inline-flex;
+    padding: 9px 12px 9px 12px;
+    color: var(--main-color);
+    font-size: 16px;
+    border-radius: 20px ;
+    font-weight: normal;
+    background-color: #1b75e41e;
+    cursor: pointer;
+}
+.earlier-notifications{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    position: relative;
+}
+.earlier-notifications h1{
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.765);
+    padding-left: 20px;
+}
+.earlier-notifications .see-all{
+    position: absolute;
+    right: 0;
+}
+.earlier-notifications .see-all a{
+    text-decoration: none;
+    color: var(--main-color);
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+.earlier-notifications .see-all a:hover{
+    background-color: #f0f2f5;
+}
+.notifications{
+    display: flex;
+    padding: 5px 5px 3px 0px;
+    margin-left: 8px;
+    border-radius: 3px;
+    cursor: pointer;
+    position: relative;
+}
+.notifications:hover{
+    background-color: #f0f2f5;
+}
+.notifications .image{
+    padding-left: 5px;
+    position: relative;
+}
+.notifications .image :nth-child(1){
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+}
+.notifications .image :nth-child(2){
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    right: -5px;
+    top: 35px;
+}
+.notifications .detail{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 10px;
+}
+.notifications .detail h1{
+    font-size: 15px;
+    font-weight: 600;
+    color: #050505c3;
+}
+.notifications .detail h1 :nth-child(1){
+    font-weight: normal;
+}
+.notifications .detail h1 :nth-child(1) span{
+    font-weight: bold;
+}
+.notifications .detail p.unseen{
+    font-weight: bold;
+    font-size: 13px;
+    color: var(--main-color);
+    margin-top: 2px;
+}
+.notifications .detail .mutual-friend h1{
+    font-size: 13px;
+    font-weight: normal;
+    color: #65676b;
+    margin-top: 5px;
+}
+.notifications .detail .buttons{
+    display: flex;
+    margin-top: 5px;
+}
+.notifications .detail .buttons :nth-child(1){
+    font-size: 15px;
+    font-weight: bold;
+    background-color: var(--main-color);
+    border: none;
+    padding: 10px 20px 10px 20px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.notifications .detail .buttons :nth-child(2){
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #cecfd4;
+    border: none;
+    padding: 10px 25px 10px 25px;
+    color: white;
+    border-radius: 5px;
+    color: rgba(0, 0, 0, 0.833);
+    margin-left: 10px;
+    cursor: pointer;
+}
+.notifications .detail .buttons :nth-child(2):hover{
+    background-color: #c5c7cd;
+}
+.notifications .unseen-dot{
+    width: 12px;
+    height: 12px;
+    background-color: var(--main-color);
+    position: absolute;
+    right: 5px;
+    border-radius: 50px;
+    top: 30px;
+}

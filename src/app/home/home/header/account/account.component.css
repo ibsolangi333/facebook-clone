@@ -1,0 +1,124 @@
+.account-main{
+    padding: 10px 15px 5px 15px;
+}
+.account-main .profile-links-box{
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 16px 16px rgb(0 0 0 / 10%);
+    border-radius: 8px;
+    padding: 5px;
+}
+.account-main .profile-links-box .profile-link{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.account-main .profile-links-box .profile-link:hover{
+    background-color: #f5f6f7;
+}
+.account-main .profile-links-box .profile-link img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+}
+.account-main .profile-links-box .profile-link h1{
+    font-size: 16px;
+    margin-left: 10px;
+    color: #050505cf;
+}
+.account-main .profile-links-box .profile-link .right-profile-img{
+    width: 24px;
+    height: 24px;
+    padding-bottom: 0px;
+    position: absolute;
+    right: 5px;
+    border-radius: 50px;
+    border: 2px solid rgba(46, 47, 53, 0.625);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.account-main .profile-links-box .profile-link .right-profile-img img{
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+}
+.seprate-line{
+    height: 1px;
+    background-color: rgba(92, 91, 96, 0.375);
+    margin-top: 5px;
+}
+.all-profile{
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    position: relative;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    margin-top: 5px;
+}
+.all-profile:hover{
+    background-color: #f5f6f7;
+}
+.all-profile h1{
+    font-size: 15px;
+    color: var(--main-color);
+}
+.all-profile span{
+    border-radius: 20px;
+    background-color: #fa383e;
+    position: absolute;
+    right: 5px;
+    color: rgba(255, 255, 255, 0.872);
+    padding: 2px 5px 2px 5px;
+    font-size: 13px;
+    font-weight: bold;
+}
+.account-options-wrapper{
+    margin-top: 20px;
+}
+.account-options{
+    display: flex;
+    align-items: center;
+    padding: 8px 5px 8px 5px;
+    position: relative;
+    cursor: pointer;
+    border-radius: 8px;
+}
+.account-options:hover{
+    background-color: #f5f6f7;
+}
+.account-options .icon{
+    width: 37px;
+    height: 37px;
+    background-color: rgba(165, 165, 170, 0.407);
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.account-options h1{
+    font-size: 15px;
+    color: #050505cf;
+    margin-left: 10px;
+}
+.account-options .right-arrow{
+    position: absolute;
+    right: 5px;
+}
+.bottom-links{
+    padding-left: 10px;
+    margin-top: 10px;
+}
+.bottom-links a,span{
+    font-size: 13px;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.585);
+}
+.bottom-links a:hover{
+    text-decoration: underline;
+}
+

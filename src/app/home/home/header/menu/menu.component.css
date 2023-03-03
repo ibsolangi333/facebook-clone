@@ -1,0 +1,98 @@
+.menu-bar-main{
+    width: 100%;
+    height: auto;
+    padding: 10px 0px 10px 15px;
+}
+.menu-bar-content{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 10px;
+}
+.menu{
+    width: 55%;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.237);
+    padding: 15px 15px 10px 15px;
+}
+.menu .menu-search{
+    width: 100%;
+    background-color: #f0f2f5;
+    border-radius: 50px;
+}
+.menu .menu-search i{
+    width: 7%;
+    margin-left: 10px;
+    color: #85888d;
+}
+.menu .menu-search input{
+    width: 88%;
+    padding: 10px 0px 10px 0px;
+    border-radius: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 15px;
+}
+.menu .menu-search input::placeholder{
+    font-size: 15px;
+}
+.menu-links-heading{
+    width: 100%;
+    margin-top: 10px;
+}
+.menu-links-heading h1{
+    font-size: 18px;
+    font-weight: normal;
+    padding: 10px 0px 10px 0px;
+}
+.menu-links-wrapper{
+    width: 100%;
+    padding: 8px 5px 8px 5px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.menu-links-wrapper:hover{
+    background-color: #f0f2f5;
+}
+.menu-links{
+    width: 100%;
+    display: flex;
+}
+.menu-links .image{
+    padding-right: 10px;
+}
+.menu-links .image img{
+    height: 36px; 
+    width: 36px;
+}
+.menu-links .detail{
+    width: 100%;
+}
+.menu-links .detail h1{
+    font-size: 15px;
+    /* font-weight: normal; */
+    color: rgba(0, 0, 0, 0.666);
+}
+.menu-links .detail p{
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 5px;
+    color: rgba(0, 0, 0, 0.588);
+}
+.menu .seprate-line{
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.173);
+    margin-top: 20px;
+}
+
+
+
+
+.create{
+    width:190px;
+    position: fixed;
+    right: 50px;
+}

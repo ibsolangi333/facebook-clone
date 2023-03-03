@@ -1,0 +1,129 @@
+.messenger-main{
+    width: 95%;
+    padding: 10px 0px 10px 15px;
+}
+.messenger-top-conetent{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.messenger-top-conetent .heading h1{
+    font-size: 24px;
+}
+.messenger-top-conetent .icons{
+    display: flex;
+}
+.messenger-top-conetent .icons .icon-wrapper{
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    transition: 200ms;
+    margin-right: 10px;
+} 
+.messenger-top-conetent .icons .icon-wrapper:hover{
+    background-color: rgba(160, 163, 174, 0.216);
+}
+.messenger-top-conetent .icons .icon-wrapper i{
+    color: rgb(101, 101, 104);
+    line-height: 30px;
+    font-size: 17px;
+}
+.search-box{
+    width: 95%;
+    background-color: #f0f2f5;
+    display: flex;
+    border-radius: 50px;
+    margin-top: 10px;
+}
+.search-box .icon{
+    width: 9%;
+}
+.search-box .icon i{
+    margin-top: 10px;
+    margin-left: 8px;
+    color: rgb(101, 101, 104);
+}
+.search-box .search-input{
+    width: 90%;
+}
+.search-box .search-input input{
+    width: 100%;
+    height: 35px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+.inbox{
+    width: 100%;
+    margin-top: 15px;
+}
+.inbox .inbox-heading{
+    width: 100%;
+}
+.inbox .inbox-heading h1{
+    display: inline-flex;
+    padding: 9px 12px 9px 12px;
+    color: var(--main-color);
+    font-size: 16px;
+    border-radius: 20px ;
+    font-weight: normal;
+    background-color: #1b75e41e;
+    cursor: pointer;
+}
+.inbox .inbox-heading h1:hover{
+    background-color: #1b75e438;
+}
+.inbox .contact{
+    width: 97%;
+    display: flex;
+    /* border: 1px solid red; */
+    padding: 7px 0px 7px 8px;
+    border-radius: 8px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.inbox .contact:hover{
+    background-color: #f0f2f5;
+}
+.inbox .contact .image{
+    display: flex;
+    align-items: center;
+}
+.inbox .contact .image img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+}
+.inbox .contact .detail{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    justify-content: center;
+    position: relative;
+}
+.inbox .contact .detail h1{
+    font-size: 15px;
+    font-weight: normal; 
+    color: #050505;
+}
+.inbox .contact .detail p{
+    margin-top: 5px;
+    font-weight: normal;
+    font-size: 13px;
+    color: #65676b;
+}
+.inbox .contact .detail img,
+.inbox .contact .detail i{
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    right: 10px;
+    border-radius: 50px;
+    color: #65676b;
+    font-size: 13px;
+}

@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
+}
+:root{
+    --main-color:#1b74e4;
+}

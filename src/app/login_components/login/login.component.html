@@ -1,0 +1,52 @@
+<div class="container">
+    <!-- login form  -->
+    <div class="wrapper">
+        <div class="login-form-outer-div">
+            <div class="fb-detail-div">
+                <img src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg" alt="Facebook">
+                <p>Facebook helps you connect and share with the people in your life.</p>
+            </div>
+            <div class="login-form-div">
+                <div class="login-form-wrapper">
+                    <form [formGroup]="loginForm" (ngSubmit)="loginSubmit()">
+                        <input type="text" placeholder="Email address or phone number" formControlName="email">
+                            <div class="login-error"
+                                *ngIf=" (submitted || loginForm.controls['email'].touched) && loginForm.controls['email'].value === ''">
+                                <span>Please fill input field</span>
+                            </div>
+                            <div class="login-error"
+                                *ngIf="submitted && loginForm.controls['email'].value != 'user@gmail.com' &&  loginForm.controls['email'].value != ''">
+                                <span>Username is incorrect</span>
+                            </div>
+                        <input type="text" placeholder="password" formControlName="password">
+                            <div class="login-error"
+                                *ngIf=" (submitted || loginForm.controls['password'].touched) && loginForm.controls['password'].value === ''">
+                                    <span>Please fill input field</span>
+                            </div>
+                            <div class="login-error"
+                                *ngIf="submitted && loginForm.controls['password'].value != 'user' &&  loginForm.controls['password'].value != ''">
+                                <span>Password is incorrect</span>
+                            </div>
+                        <button class="login-button">Log in</button>
+                        <a href="" class="forget-password-link">Forgotten password?</a>
+                    </form>
+                    <div class="create-account-button-div">
+                        <a (click)="openSingUpForm()">Create New Account</a>
+                    </div>
+                </div>
+                <div class="create-page-description-div">
+                    <h1><a href="">Create a Page </a>for a celebrity, brand or business.</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- login form end -->
+<!-- sign up form -->
+<div class="sign-up-form-page-div" *ngIf="signUpDisplay">
+    <div (click)="hideSignUpForm()">
+        <img src="https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/zgulV2zGm8t.png" alt="" width="24" height="24">
+    </div>
+    <app-sign-up></app-sign-up>
+</div>
+<!-- sign up form end -->

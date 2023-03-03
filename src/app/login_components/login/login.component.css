@@ -1,0 +1,203 @@
+
+.container{
+    background: #f0f2f5;
+    height: 100vh;  
+    position: relative;
+    overflow-x: hidden;
+}
+.wrappper{
+    height: 100%;
+    width: 100%;
+    background: #f0f2f5;
+}
+/* login form */
+.login-form-outer-div{
+    display: flex;
+    justify-content: space-around;
+    padding: 0px 300px 0px 250px;
+    align-items: flex-start;
+    /* padding-bottom: 300px; */
+}
+.fb-detail-div{
+    width: 550px;
+    margin-top: 170px;
+}
+.fb-detail-div img {
+    height: 106px;
+}
+.fb-detail-div p {
+    /* width: 500px; */
+    padding-left: 30px;
+    font-size: 28px;
+    margin-top: -15px;
+}
+.login-form-div{
+    margin-top: 135px;
+}
+.login-form-wrapper{
+    width: 370px;
+    padding: 0px 15px 25px 15px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    border-radius: 8px;
+}
+
+.login-form-wrapper form input {
+    width: 340px;
+    padding: 14px;
+    border: 1px solid #dddfe2;
+    color: #1d2129;
+    font-size: 17px;
+    outline: none;
+    margin-top: 17px;
+    border-radius: 6px;
+}
+.login-form-wrapper form ::placeholder{
+    color: rgb(146, 148, 151);
+}
+
+.login-button{
+    width: 370px;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    margin-top: 15px;
+    background-color: #1877f2;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    position: relative;
+    cursor: pointer;
+}
+.login-button:hover:before{
+    content: "";
+    width: 320px;
+    padding: 24px;
+    background-color: rgba(0, 0, 0, 0.07);
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 6px;
+}
+.forget-password-link{
+    text-decoration: none;
+    width: 365px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #cbced2;
+    color: #1877f2;
+    font-size: 14px;
+    margin-top: 16px;
+    padding-bottom: 20px;
+}
+.forget-password-link:hover{
+    text-decoration: underline;
+}
+.create-account-button-div{
+    display: flex;
+    justify-content: center;
+}
+.create-account-button-div a{
+    text-decoration: none;
+    background-color: #42b72a;
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+    border-radius: 5px;
+    margin-top: 30px;
+    padding: 15px 13px 15px 13px;
+    position: relative;
+    cursor: pointer;
+}
+.create-account-button-div a:hover:before{
+    content: "";
+    width: 145px;
+    padding: 24px;
+    background-color: rgba(0, 0, 0, 0.07);
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 6px;
+}
+.create-page-description-div{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.create-page-description-div h1{
+    font-size: 14px;
+    font-weight: lighter;
+}
+.create-page-description-div a{
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+.create-page-description-div a:hover{
+    text-decoration: underline;
+}
+/* login form end*/
+/* sign up form  */
+.sign-up-form-page-div{
+    width: 100%;
+    background-color: rgba(255, 255, 255, .8);
+    height: 100vh;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    position: absolute;
+}
+.sign-up-form-page-div img{
+    position: absolute;
+    z-index: 20;
+    right: 590px;
+    top: 110px;
+}
+
+
+/* sign up form end */
+
+
+
+@media (max-width:992px){
+    .login-form-outer-div{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+    }   
+    .fb-detail-div{
+        margin: 15px;
+        padding: 0px 50px 0px 50px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .fb-detail-div p{
+        font-size: 24px;
+        width: 380px;
+    }
+    .login-form-div{
+        margin-top: 30px;
+    }
+}
+
+
+
+
+
+.login-error{
+    width: 100%;
+    padding: 5px 0px 5px 0px;
+    background-color: rgba(255, 0, 0, 0.09);
+    text-align: center;
+    margin-top: 5px;
+    border-radius: 3px;
+}
+.login-error span{
+    color: rgba(255, 0, 0, 0.727);
+    font-weight: bold;
+    font-size: 12px;
+}

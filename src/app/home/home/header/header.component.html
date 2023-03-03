@@ -1,0 +1,188 @@
+<header>
+    <div class="header-main">
+        <div class="header-section-1">
+            <div class="logo">
+                <i class="fa-brands fa-facebook-f"></i>
+            </div>
+            <div class="search-box" [style.width]="SearchBoxWidth" (click)="openSearchBar()">
+                <i class="fa-brands fa-searchengin" [style.marginLeft]="serachIconMargin"></i>
+                <input type="text" placeholder="Search Facebook">
+            </div>
+            <div class="more-btn">
+                <i class="fa-solid fa-bars"></i>
+                <div class="more-heading">
+                    <span>more</span>
+                </div>
+            </div>
+            <div *ngIf="searchBarDisplay" class="search-bar">
+                <div class="search-hide-icon" (click)="hideSearchBar()">
+                    <i class="fa fa-arrow-left"></i>
+                </div>
+                <div class="recent-search-heading">
+                    <h1>Recent searches</h1>
+                    <button>Edit</button>
+                </div> 
+                <div class="recent-searches">
+                    <div>
+                        <img src="../../../../assets/recent search/img-1.jpg" alt="">
+                        <h1>Mohammad Ibrahim</h1>
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <div>
+                        <img src="../../../../assets/recent search/img-1.jpg" alt="">
+                        <h1>Mohammad Ibrahim</h1>
+                        <i class="fa fa-times" aria-hidden="true"></i>
+                    </div>
+                    <div>
+                        <img src="../../../../assets/recent search/img-1.jpg" alt="">
+                        <h1>Mohammad Ibrahim</h1>
+                        <i class="fa fa-times" aria-hidden="true"></i>
+                    </div>
+                    <div>
+                        <div class="recent-time-img">
+                            <img src="../../../../assets/recent search/img-2.png" alt="">
+                        </div>
+                        <h1>Mohammad Ibrahim</h1>
+                        <i class="fa fa-times" aria-hidden="true"></i>
+                    </div>
+                    <div>
+                        <div class="recent-time-img">
+                            <img src="../../../../assets/recent search/img-2.png" alt="">
+                        </div>
+                        <h1>Mohammad Ibrahim</h1>
+                        <i class="fa fa-times" aria-hidden="true"></i>
+                    </div>
+                    <div>
+                        <img src="../../../../assets/recent search/img-1.jpg" alt="">
+                        <h1>Mohammad Ibrahim</h1>
+                        <i class="fa fa-times" aria-hidden="true"></i>
+                    </div>
+                    <div>
+                        <div class="recent-time-img">
+                            <img src="../../../../assets/recent search/img-2.png" alt="">
+                        </div>
+                        <h1>Mohammad Ibrahim</h1>
+                        <i class="fa fa-times" aria-hidden="true"></i>
+                    </div>
+                    <div>
+                        <img src="../../../../assets/recent search/img-1.jpg" alt="">
+                        <h1>Mohammad Ibrahim</h1>
+                        <i class="fa fa-times" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="header-section-2">
+            <div class="navbar-links" (click)="homeFuc()" [ngClass]="{homeLinkBgHover}">
+                <i class="fa fa-home" [style.color]="homeIconColor"></i>
+                <span class="link-bottom-line" [style.display]="homeBottomLineDisplay"></span>
+                <div class="link-hover-heading">
+                    <span>Home</span>
+                </div>
+            </div>
+            <div class="navbar-links navbar-links-hover" [ngClass]="{FriendsLinkBgHover}" (click)="friendsFuc()">
+                <i class="fa fa-user" aria-hidden="true" [style.color]="friendsIconColor"></i>
+                <span class="link-bottom-line" [style.display]="friendsBottomLineDisplay"></span>
+                <div class="link-hover-heading">
+                    <span>Friends</span>
+                </div>
+            </div>
+            <div class="navbar-links" (click)="watchFun()" [ngClass]="{watchLinkBgHover}">
+                <i class="fa-brands fa-youtube" [style.color]="watchIconColor"></i>
+                <span class="link-bottom-line" [style.display]="watchBottomLineDisplay"></span>
+                <div class="link-hover-heading">
+                    <span>Watch</span>
+                </div>
+            </div>
+            <div class="navbar-links" (click)="marketplaceFun()" [ngClass]="{marketplaceLinkBgHover}">
+                <i class="fa-solid fa-shop" [style.color]="marketplaceIconColor"></i>
+                <span class="link-bottom-line" [style.display]="marketplaceBottomLineDisplay"></span>
+                <div class="link-hover-heading">
+                    <span>Marketplace</span>
+                </div>
+            </div>
+            <div class="navbar-links" (click)="groupsFuc()" [ngClass]="{groupsLinkBgHover}">
+                <i class="fa fa-users" aria-hidden="true" [style.color]="groupsIconColor"></i>
+                <span class="link-bottom-line" [style.display]="groupsBottomLineDisplay"></span>
+                <div class="link-hover-heading">
+                    <span>Groups</span>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="header-section-3">
+            <!-- menu start -->
+            <div class="icons-div menu-icon-display" (click)="menuFun()" [style.backgroundColor]="menuChangeBackground">
+                <div class="wrapper">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+                <div class="icon-heading" style="left: -8px;">
+                    <span>menu</span>
+                </div>
+            </div>
+            <div class="menu-bar" *ngIf="displayMenuBar">
+                <div class="heading">
+                    <h1>Menu</h1>
+                </div>
+                <div class="menu-bar-content">
+                    <app-menu></app-menu>
+                </div>  
+            </div>
+            <!-- menu end -->
+            <!-- create start -->
+            <div class="icons-div create-icon-display" (click)="createFun()" [style.backgroundColor]="createChangeBackground">
+                <i class="fa-light fa-plus"></i>
+                <div class="icon-heading" style="left: -10px;">
+                    <span>create</span>
+                </div>
+            </div>
+            <div class="create-bar" *ngIf="displayCreateBar">
+                <app-create></app-create>
+            </div>
+            <!-- create end -->
+            <!-- messenger start -->
+            <div class="icons-div" (click)="messengerFun()" [style.backgroundColor]="messengerChangeBackground">
+                <i class="fa-brands fa-facebook-messenger"></i>
+                <div class="icon-heading" style="left: -20px;">
+                    <span>messenger</span>
+                </div>
+            </div>
+            <div class="messenger-bar" *ngIf="displayMessengerBar">
+                <div class="messenger-component">
+                    <app-messenger></app-messenger>
+                </div>
+                <div class="see-all">
+                    <h1>See all in Messenger</h1>
+                </div>
+            </div>
+            <!-- messenger end -->
+            <!-- notifications start -->
+            <div class="icons-div" (click)="notificationFun()" [style.backgroundColor]="notificationChangeBackground">
+                <i class="fa-solid fa-bell"></i>
+                <div class="icon-heading" style="left: -25px;">
+                    <span>notifications</span>
+                </div>
+            </div>
+            <div class="notification-bar" *ngIf="displayNotficationsBar">
+                <app-notifications></app-notifications>
+            </div>
+            <!-- notifications end -->
+            <!-- account start -->
+            <div class="acount-setting" (click)="accountFun()">
+                <img src="../../../../assets/recent search/img-1.jpg" alt="">
+                <div class="icon-heading" style="left: -40px;">
+                    <span>notifications</span>
+                </div>
+            </div>
+            <div class="account-bar" *ngIf="displayAccountBar">
+                <app-account></app-account>
+            </div>
+            <!-- account end -->
+        </div>
+    </div>
+</header>

@@ -1,0 +1,54 @@
+.create-main{
+    width: 100%;
+    background-color: #fff;
+    border: 10px;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.237);
+    border-radius: 5px;
+    padding: 10px 10px 10px 10px;
+}
+.create-heading{
+    width: 100%;
+}
+.create-heading h1{
+    font-size: 18px;
+    color: rgba(20, 20, 23, 0.954);
+}
+.create-links-wrapper{
+    width: 100%;
+    margin-top: 15px;
+}
+.create-links{
+    width: 95%;
+    display: flex;
+    padding: 7px 5px 7px 8px;
+    border-radius: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+.create-links:hover{
+    background-color: #f0f2f5;
+}
+.create-links .icon{
+    width: 35px;
+    height: 35px;
+    background-color: #d3d5dae7;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+}
+.create-links .icon i{
+    font-size: 18px;
+    line-height: 35px;
+}
+.create-links .link-name h1{
+    font-size: 17px;
+    font-weight: normal;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+.seprate-line{
+    width: 100%;
+    border-top: 1px solid rgba(43, 43, 45, 0.177);
+    margin-top: 10px;
+    padding-bottom: 5px;
+}
