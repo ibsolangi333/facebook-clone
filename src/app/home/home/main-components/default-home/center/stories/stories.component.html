@@ -1,0 +1,225 @@
+<!-- buttons start -->
+<div class="stories-and-reels-wrapper">
+    <div class="stories-and-reels">
+        <div class="buttons" [ngClass]="{storiesHover}" (click)="stories()">
+            <i class="fa-solid fa-book-open" [style.color]="storyButtonColor"></i>
+            <h1 [style.color]="storyButtonColor">Stories</h1>
+            <span *ngIf="storyBottomLine"></span>
+        </div>
+        <div class="buttons" (click)="reels()" [ngClass]="{reelsHover}">
+            <i class="fa-solid fa-clapperboard" [style.color]="reelsButtonColor"></i>
+            <h1 [style.color]="reelsButtonColor">Reels</h1>
+            <span *ngIf="reelsBottomLine"></span>
+        </div>
+    </div>
+</div>
+<!-- buttons end -->
+<!-- ======================= -->
+<!-- stories start -->
+<div class="clips-wrapper" [style.marginLeft]="slider" *ngIf="storiesDisplay">
+    <!-- create story start -->
+    <div class="create-story">
+            <img src="../../../../../../../assets/recent search/img-1.jpg" alt="">
+        <div class="plus-icon">
+            <i class="fa-regular fa-plus"></i>
+        </div>
+        <h1>Create story</h1>
+    </div>
+    <!-- create story end -->
+    <!-- other clips start -->
+    <div class="clips">
+        <div class="image-1">
+            <img src="../../../../../../../assets/recent search/img-1.jpg" alt="">
+        </div>
+        <div class="image-2">
+            <img src="../../../../../../../assets/recent search/img-1.jpg" alt="">
+        </div>
+        <h1>Muhammad Ibrahim</h1>
+    </div>
+    <div class="clips">
+        <div class="image-1">
+            <img src="../../../../../../../assets/recent search/img-1.jpg" alt="">
+        </div>
+        <div class="image-2">
+            <img src="../../../../../../../assets/recent search/img-1.jpg" alt="">
+        </div>
+        <h1>Muhammad Ibrahim</h1>
+    </div>
+    <div class="clips">
+        <div class="image-1">
+            <img src="../../../../../../../assets/recent search/img-1.jpg" alt="">
+        </div>
+        <div class="image-2">
+            <img src="../../../../../../../assets/recent search/img-1.jpg" alt="">
+        </div>
+        <h1>Muhammad Ibrahim</h1>
+    </div>
+    <div class="clips">
+        <div class="image-1">
+            <img src="../../../../../../../assets/recent search/img-1.jpg" alt="">
+        </div>
+        <div class="image-2">
+            <img src="../../../../../../../assets/recent search/img-1.jpg" alt="">
+        </div>
+        <h1>Muhammad Ibrahim</h1>
+    </div>
+    <div class="clips">
+        <div class="image-1">
+            <img src="../../../../../../../assets/recent search/img-1.jpg" alt="">
+        </div>
+        <div class="image-2">
+            <img src="../../../../../../../assets/recent search/img-1.jpg" alt="">
+        </div>
+        <h1>Muhammad Ibrahim</h1>
+    </div>
+    <div class="clips">
+        <div class="image-1">
+            <img src="../../../../../../../assets/recent search/img-1.jpg" alt="">
+        </div>
+        <div class="image-2">
+            <img src="../../../../../../../assets/recent search/img-1.jpg" alt="">
+        </div>
+        <h1>Muhammad Ibrahim</h1>
+    </div>
+    <div class="clips">
+        <div class="image-1">
+            <img src="../../../../../../../assets/recent search/img-1.jpg" alt="">
+        </div>
+        <div class="image-2">
+            <img src="../../../../../../../assets/recent search/img-1.jpg" alt="">
+        </div>
+        <h1>Muhammad Ibrahim</h1>
+    </div>
+    <div class="clips">
+        <div class="image-1">
+            <img src="../../../../../../../assets/recent search/img-1.jpg" alt="">
+        </div>
+        <div class="image-2">
+            <img src="../../../../../../../assets/recent search/img-1.jpg" alt="">
+        </div>
+        <h1>Muhammad Ibrahim</h1>
+    </div>
+    <div class="clips">
+        <div class="image-1">
+            <img src="../../../../../../../assets/recent search/img-1.jpg" alt="">
+        </div>
+        <div class="image-2">
+            <img src="../../../../../../../assets/recent search/img-1.jpg" alt="">
+        </div>
+        <h1>Muhammad Ibrahim</h1>
+    </div>
+    <!-- other clips end -->
+</div>
+<div class="left-slider-btn" (click)="slideLeft()" *ngIf="LeftBtnDisplay">
+    <i class="fa-solid fa-chevron-left"></i>
+</div>
+<div class="right-slider-btn" (click)="slideRight()" *ngIf="RightBtnDisplay">
+    <i class="fa-solid fa-chevron-right"></i>
+</div>
+<!-- stories end -->
+<!-- ======================= -->
+<!-- reels start -->
+<div class="clips-wrapper" [style.marginLeft]="slider" *ngIf="reelsDisplay">
+    <!-- other clips start -->
+    <div class="clips">
+        <div class="image-1">
+            <img src="../../../../../../../assets/recent search/img-1.jpg" alt="">
+        </div>
+        <div class="image-2">
+            <img src="../../../../../../../assets/recent search/img-1.jpg" alt="">
+        </div>
+        <h1>Muhammad Ibrahim</h1>
+    </div>
+    <div class="clips">
+        <div class="image-1">
+            <img src="../../../../../../../assets/recent search/img-1.jpg" alt="">
+        </div>
+        <div class="image-2">
+            <img src="../../../../../../../assets/recent search/img-1.jpg" alt="">
+        </div>
+        <h1>Muhammad Ibrahim</h1>
+    </div>
+    <div class="clips">
+        <div class="image-1">
+            <img src="../../../../../../../assets/recent search/img-1.jpg" alt="">
+        </div>
+        <div class="image-2">
+            <img src="../../../../../../../assets/recent search/img-1.jpg" alt="">
+        </div>
+        <h1>Muhammad Ibrahim</h1>
+    </div>
+    <div class="clips">
+        <div class="image-1">
+            <img src="../../../../../../../assets/recent search/img-1.jpg" alt="">
+        </div>
+        <div class="image-2">
+            <img src="../../../../../../../assets/recent search/img-1.jpg" alt="">
+        </div>
+        <h1>Muhammad Ibrahim</h1>
+    </div>
+    <div class="clips">
+        <div class="image-1">
+            <img src="../../../../../../../assets/recent search/img-1.jpg" alt="">
+        </div>
+        <div class="image-2">
+            <img src="../../../../../../../assets/recent search/img-1.jpg" alt="">
+        </div>
+        <h1>Muhammad Ibrahim</h1>
+    </div>
+    <div class="clips">
+        <div class="image-1">
+            <img src="../../../../../../../assets/recent search/img-1.jpg" alt="">
+        </div>
+        <div class="image-2">
+            <img src="../../../../../../../assets/recent search/img-1.jpg" alt="">
+        </div>
+        <h1>Muhammad Ibrahim</h1>
+    </div>
+    <div class="clips">
+        <div class="image-1">
+            <img src="../../../../../../../assets/recent search/img-1.jpg" alt="">
+        </div>
+        <div class="image-2">
+            <img src="../../../../../../../assets/recent search/img-1.jpg" alt="">
+        </div>
+        <h1>Muhammad Ibrahim</h1>
+    </div>
+    <div class="clips">
+        <div class="image-1">
+            <img src="../../../../../../../assets/recent search/img-1.jpg" alt="">
+        </div>
+        <div class="image-2">
+            <img src="../../../../../../../assets/recent search/img-1.jpg" alt="">
+        </div>
+        <h1>Muhammad Ibrahim</h1>
+    </div>
+    <div class="clips">
+        <div class="image-1">
+            <img src="../../../../../../../assets/recent search/img-1.jpg" alt="">
+        </div>
+        <div class="image-2">
+            <img src="../../../../../../../assets/recent search/img-1.jpg" alt="">
+        </div>
+        <h1>Muhammad Ibrahim</h1>
+    </div>
+    <div class="clips">
+        <div class="image-1">
+            <img src="../../../../../../../assets/recent search/img-1.jpg" alt="">
+        </div>
+        <div class="image-2">
+            <img src="../../../../../../../assets/recent search/img-1.jpg" alt="">
+        </div>
+        <h1>Muhammad Ibrahim</h1>
+    </div>
+    <!-- other clips end -->
+</div>
+<div class="left-slider-btn" (click)="slideLeft()" *ngIf="LeftBtnDisplay">
+    <i class="fa-solid fa-chevron-left"></i>
+</div>
+<div class="right-slider-btn" (click)="slideRight()" *ngIf="RightBtnDisplay">
+    <i class="fa-solid fa-chevron-right"></i>
+</div>
+<!-- reels end  -->
+<!-- ====================== -->
+
+

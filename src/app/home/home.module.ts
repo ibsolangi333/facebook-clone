@@ -14,6 +14,11 @@ import { WatchComponent } from './home/main-components/watch/watch.component';
 import { MarketplaceComponent } from './home/main-components/marketplace/marketplace.component';
 import { GroupsComponent } from './home/main-components/groups/groups.component';
 import { DefaultHomeComponent } from './home/main-components/default-home/default-home.component';
+import { LeftComponent } from './home/main-components/default-home/left/left.component';
+import { CenterComponent } from './home/main-components/default-home/center/center.component';
+import { RightComponent } from './home/main-components/default-home/right/right.component';
+import { StoriesComponent } from './home/main-components/default-home/center/stories/stories.component';
+import { MakePostComponent } from './home/main-components/default-home/center/make-post/make-post.component';
 
 
 @NgModule({
@@ -29,7 +34,12 @@ import { DefaultHomeComponent } from './home/main-components/default-home/defaul
     WatchComponent,
     MarketplaceComponent,
     GroupsComponent,
-    DefaultHomeComponent
+    DefaultHomeComponent,
+    LeftComponent,
+    CenterComponent,
+    RightComponent,
+    StoriesComponent,
+    MakePostComponent
   ],
   imports: [
     CommonModule,

@@ -369,10 +369,8 @@
     border-radius: 10px;
     box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 16px 16px rgb(0 0 0 / 10%);
     overflow: hidden;
-    padding-right: 20px;
-}
-.menu-bar:hover{
     overflow-y: scroll;
+    padding-right: 20px;
 }
 .menu-bar::-webkit-scrollbar{
     width: 9px;
@@ -380,7 +378,7 @@
 .menu-bar::-webkit-scrollbar-track{
     background: transparent;
 }
-.menu-bar::-webkit-scrollbar-thumb{
+.menu-bar:hover::-webkit-scrollbar-thumb{
     background-color: #a9adb1bf;
     border-radius: 10px;
 }
@@ -479,17 +477,16 @@
     box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 16px 16px rgb(0 0 0 / 10%);
     right: 30px;
     overflow: hidden;
-}
-.notification-bar:hover{
     overflow-y: scroll;
 }
+
 .notification-bar::-webkit-scrollbar{
     width: 9px;
 }
 .notification-bar::-webkit-scrollbar-track{
     background: transparent;
 }
-.notification-bar::-webkit-scrollbar-thumb{
+.notification-bar:hover::-webkit-scrollbar-thumb{
     background-color: #a9adb1bf;
     border-radius: 10px;
 }

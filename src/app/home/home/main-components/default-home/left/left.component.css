@@ -1,0 +1,116 @@
+.main{
+    padding: 15px 5px 10px 5px;
+}
+/* ============== */
+/* links start */
+.main .links{
+    display: flex;
+    padding: 10px 5px 5px 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.main .links:hover{
+    background-color: rgba(128, 128, 128, 0.13);
+}
+.main .links .image img{
+    width: 36px;
+    height: 36px;
+    border-radius: 50px;
+}
+.main .links .hidden-and-show{
+    width: 36px;
+    height: 36px;
+    background-color: rgba(128, 128, 128, 0.13);
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main .links .hidden-and-show svg{
+    font-size: 20px;
+}
+.main .links .name{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+.main .links .name h1{
+    font-size: 15px;
+    margin-top: -4px;
+    color: #272728;
+}
+/* links start */
+/* ============== */
+.seprate-line{
+    height: 1px;
+    background-color: rgba(128, 128, 128, 0.306);
+    margin-top: 10px;
+}
+/* ============== *
+/* shortcut start*/
+.main .shortcuts{
+    margin-top: 10px;
+}
+.main .shortcuts .top-heading{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    position: relative;
+}
+.main .shortcuts .top-heading h1{
+    font-size: 16px;
+    color: rgb(119, 119, 123);
+}
+.main .shortcuts .top-heading button{
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    padding: 8px 7px 8px 7px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-radius: 3px;
+    font-size: 14px;
+    color: var(--main-color);
+    display: none;
+}
+.main .shortcuts .top-heading button:hover{
+    background-color: rgba(128, 128, 128, 0.12);
+}
+.main .shortcuts .top-heading:hover button{
+     display: block;
+}
+.main .shortcuts .page-link{
+    padding: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+}
+.main .shortcuts .page-link:hover{
+    background-color: rgba(128, 128, 128, 0.12);
+}
+.main .shortcuts .page-link img{
+    width: 36px;
+    height: 36px;
+    border-radius: 50px;
+}
+.main .shortcuts .page-link h1{
+    font-size: 15px;
+    color: #272728;
+    margin-left: 10px;
+}
+.main .shortcuts .bottom-links{
+    padding-left: 10px;
+    margin-top: 10px;
+}
+.main .shortcuts .bottom-links a,span{
+    font-size: 13px;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.585);
+}
+.main .shortcuts .bottom-links a:hover{
+    text-decoration: underline;
+}
+/* shortcut end */
+/* ============== */

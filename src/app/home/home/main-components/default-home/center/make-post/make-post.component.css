@@ -1,0 +1,68 @@
+.main{
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.371);
+    padding: 0px 20px 0px 15px;
+}
+.main .top{
+    display: flex;
+    align-items: center;
+    /* background-color: red; */
+    padding: 10px 0px 10px 0px; 
+}
+.main .top .image{
+    width: 9%;
+}
+.main .top .image img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+}
+.main .top .input{
+    width: 90%;
+}
+.main .top .input input{
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    background-color: #f0f2f5;
+    padding-left: 10px;
+    cursor: pointer;
+    margin-top: -3px;
+}
+.main .top .input input::placeholder{
+    font-size: 17px;
+}
+
+.main .bottom{
+    display: flex;
+    padding: 10px 0px 10px 0px; 
+    /* justify-content: space-between; */
+}
+.main .bottom .links{
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 0px 8px 0px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.main .bottom .links:hover{
+    background-color: #f0f2f5;
+}
+.main .bottom .links img{
+    width: 24px;
+    height: 24px;
+}
+.main .bottom .links h1{
+    font-size: 15px;
+    color: #65676b;
+    margin-left: 10px;
+}
+.seprate-line{
+    border-bottom: 1px solid rgba(128, 128, 128, 0.23);
+}

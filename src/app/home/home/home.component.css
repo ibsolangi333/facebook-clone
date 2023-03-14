@@ -1,12 +1,13 @@
-.main-parent{
-    width: 100%;
-    position: relative;
-    height: 200px;
-    background-color: red;
-    margin-top: 55px;
-}
 .header{
     position: fixed;
     width: 100%;
     top: 0;
+    z-index: 10;
+}
+.main-parent{
+    width: 100%;
+    position: relative;
+    min-height: 100vh;
+    background-color: #eff2f6de;
+    margin-top: 55px;
 }

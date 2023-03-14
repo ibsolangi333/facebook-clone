@@ -1,0 +1,110 @@
+.main{
+    padding: 10px 5px 10px 5px;
+}
+/* ========================= */
+/* page and profile start */
+.main .links-wrapper{
+    margin-top: 10px;
+}
+.main .links-wrapper .heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main .links-wrapper .heading h1{
+    font-size: 17px;
+    color: #65676b;
+} 
+.main .links-wrapper .heading .icon{
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.main .links-wrapper .heading .icon:hover{
+    background-color: rgba(128, 128, 128, 0.12);
+}
+.main .links-wrapper .heading .icon i{
+    color: #65676b;
+    font-size: 14px;
+}
+.main .links{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 5px;
+    position: relative;
+}
+.main .links:hover{
+    background-color: rgba(128, 128, 128, 0.12);
+}
+.main .links img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+}
+.main .links .page-link{
+    font-size: 14px;
+    color: #050505;
+    margin-left: 10px;
+}
+.main .links i{
+    color: #65676b;
+    margin-left: 15px;
+}
+.main .links .other-links{
+    color: #65676b;
+    font-size: 13px;
+    margin-left: 10px;
+}
+/* page and profile end */
+/* ========================= */
+/* birthdays start */
+.main .links-wrapper .links .birthdays-img{
+    margin: 0px;
+}
+/* birthdays end */
+/* conatcts start */
+.main .links-wrapper .heading .contact-icons{
+    display: flex;
+    justify-content: space-between;
+    width: 120px;
+}
+.main .links-wrapper .links span{
+    width: 8px;
+    height: 8px;
+    background-color: rgb(66, 130, 66);
+    border-radius: 50px;
+    position: absolute;
+    top: 32px;
+    left: 33px;
+    border: 2px solid white;
+}
+/* conatcts end */
+/* groups conversation start */
+.main .links-wrapper .links .icon-box{
+    width: 37px;
+    height: 37px;
+    border-radius: 50px;
+    background-color: rgba(128, 128, 128, 0.12);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main .links-wrapper .links .icon-box i{
+    color: #050505;
+    margin: 0;
+    margin-left: 2px;
+}
+/* groups conversation end */
+
+.seprate-line{
+    border-top: 1px solid rgba(128, 128, 128, 0.244);
+    margin-top: 7px;
+    padding-bottom: 7px;
+}

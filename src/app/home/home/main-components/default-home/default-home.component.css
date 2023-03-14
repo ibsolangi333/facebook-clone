@@ -1,0 +1,51 @@
+.main-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+/* left star */
+.left{
+    width: 22%;
+    height: 92.8vh;
+    position: fixed;
+    left: 0;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.left::-webkit-scrollbar{
+    width: 9px;
+}
+.left::-webkit-scrollbar-track{
+    background: transparent;
+}
+.left:hover::-webkit-scrollbar-thumb{
+    background-color: #a9adb1bf;
+    border-radius: 10px;
+} 
+/* left end */
+.center{
+    width: 880px;
+    height: 100px;
+    /* background-color: red; */
+}
+/* right start */
+.right{
+    width: 22%;
+    height: 92.8vh;
+    position: fixed;
+    right: 0;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.right::-webkit-scrollbar{
+    width: 9px;
+}
+.right::-webkit-scrollbar-track{
+    background: transparent;
+}
+.right:hover::-webkit-scrollbar-thumb{
+    background-color: #a9adb1bf;
+    border-radius: 10px;
+}
+/* right end */
+
