@@ -24,7 +24,7 @@
 } 
 /* left end */
 .center{
-    width: 880px;
+    width: 40%;
     height: 100px;
     /* background-color: red; */
 }
@@ -48,4 +48,21 @@
     border-radius: 10px;
 }
 /* right end */
+
+@media (max-width : 1150px) {
+    .main-container{
+        justify-content: space-between;
+    }
+    .main-container .left{
+        display: none;
+    }  
+}
+@media (max-width : 1000px){
+    .main-container .right{
+        display: none;
+    }
+    .main-container{
+        justify-content: center;
+    }
+}
 

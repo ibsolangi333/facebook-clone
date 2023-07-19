@@ -15,8 +15,8 @@
                                 <span>Please fill input field</span>
                             </div>
                             <div class="login-error"
-                                *ngIf="submitted && loginForm.controls['email'].value != 'user@gmail.com' &&  loginForm.controls['email'].value != ''">
-                                <span>Username is incorrect</span>
+                                *ngIf="(submitted && loginForm.controls['email'].value !== 'user@gmail.com') &&  loginForm.controls['email'].value != ''">
+                                <span>*Username is incorrect*</span>
                             </div>
                         <input type="text" placeholder="password" formControlName="password">
                             <div class="login-error"
@@ -24,8 +24,8 @@
                                     <span>Please fill input field</span>
                             </div>
                             <div class="login-error"
-                                *ngIf="submitted && loginForm.controls['password'].value != 'user' &&  loginForm.controls['password'].value != ''">
-                                <span>Password is incorrect</span>
+                                *ngIf="(submitted && loginForm.controls['password'].value !== 'user123') &&  loginForm.controls['password'].value != ''">
+                                <span>*Password is incorrect*</span>
                             </div>
                         <button class="login-button">Log in</button>
                         <a href="" class="forget-password-link">Forgotten password?</a>
