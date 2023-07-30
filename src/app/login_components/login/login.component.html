@@ -10,7 +10,7 @@
                 <div class="login-form-wrapper">
                     <form [formGroup]="loginForm" (ngSubmit)="loginSubmit()">
                         <input type="text" placeholder="Email address or phone number" formControlName="email">
-                        <h1>Username: user@gmail.com</h1>
+                        <h1 style="font-size: 12px; font-weight: lighter;">Username: user@gmail.com</h1>
                             <div class="login-error"
                                 *ngIf=" (submitted || loginForm.controls['email'].touched) && loginForm.controls['email'].value === ''">
                                 <span>Please fill input field</span>
@@ -20,7 +20,7 @@
                                 <span>*Username is incorrect*</span>
                             </div>
                         <input type="text" placeholder="password" formControlName="password">
-                        <h1>Password: user123</h1>
+                        <h1 style="font-size: 12px; font-weight: lighter;">Password: user123</h1>
                             <div class="login-error"
                                 *ngIf=" (submitted || loginForm.controls['password'].touched) && loginForm.controls['password'].value === ''">
                                     <span>Please fill input field</span>
